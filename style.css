@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f4f6f9;
   margin: 0;
   padding: 0;
@@ -17,11 +17,12 @@ body {
 header {
   text-align: center;
   padding: 20px;
+  border-bottom: 3px solid #2980b9;
 }
 
 .profile-img {
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
@@ -30,19 +31,33 @@ header {
 
 h1 {
   margin: 0;
-  font-size: 2em;
+  font-size: 2.2em;
   color: #2c3e50;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 15px;
 }
 
 h2 {
   color: #2980b9;
-  margin-top: 30px;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 5px;
+  margin-top: 40px;
+  border-left: 5px solid #2980b9;
+  padding-left: 10px;
 }
 
-section {
-  margin-bottom: 25px;
+.card {
+  background: #f9f9f9;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 ul {
@@ -52,6 +67,47 @@ ul {
 
 ul li {
   margin: 8px 0;
+}
+
+.skill {
+  margin: 10px 0;
+}
+.skill span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.skill-bar {
+  width: 100%;
+  background: #e0e0e0;
+  border-radius: 5px;
+  height: 15px;
+  overflow: hidden;
+}
+.skill-level {
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+}
+
+/* Niveaux de compétences */
+.skill-level.python { width: 90%; background: #3572A5; }
+.skill-level.sql { width: 80%; background: #f29111; }
+.skill-level.ml { width: 70%; background: #e34c26; }
+.skill-level.tools { width: 75%; background: #2c3e50; }
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2980b9;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.btn:hover {
+  background: #1f6691;
 }
 
 footer {
@@ -70,7 +126,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .container {
     padding: 15px;

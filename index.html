@@ -5,67 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Olly</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
-    <!-- ===== HEADER ===== -->
+
+    <!-- HEADER -->
     <header>
       <img src="images/photo.jpg" alt="Photo de profil" class="profile-img">
       <h1>Olly</h1>
-      <p>Master 1 en Science de données<br>Université Joseph Ki Zerbo</p>
+      <p class="subtitle">Master 1 Science de données<br>Université Joseph Ki Zerbo</p>
+      <a href="cv-olly.pdf" class="btn" target="_blank"><i class="fa fa-download"></i> Télécharger mon CV</a>
     </header>
 
-    <!-- ===== FORMATION ===== -->
+    <!-- PROFIL -->
     <section>
-      <h2>🎓 Formation</h2>
-      <ul>
-        <li><strong>2024 - Présent :</strong> Master 1 Science de données – Université Joseph Ki Zerbo (IFOAD)</li>
-        <li><strong>Licence :</strong> Réseau et Système – Université Joseph Ki Zerbo</li>
-      </ul>
+      <h2><i class="fa fa-user"></i> Profil</h2>
+      <p>Étudiant en Master 1 de Science de données, passionné par l’analyse, la modélisation et la valorisation des données. Expérience en Machine Learning, SQL, gestion de bases de données et développement de solutions d’analyse.</p>
     </section>
 
-    <!-- ===== EXPERIENCES ===== -->
+    <!-- FORMATION -->
     <section>
-      <h2>💼 Expériences</h2>
-      <ul>
-        <li><strong>2025 :</strong> Stage – Direction des Services Informatiques, Université Joseph Ki Zerbo</li>
-        <li><strong>Projets :</strong> 
-          <ul>
-            <li>🔍 Détection d’anomalies comportementales dans des transactions numériques (IEEE Fraud Detection)</li>
-            <li>☀️ Analyse de séries temporelles (Sunspot dataset)</li>
-            <li>📚 Logiciel de gestion de notes avec PostgreSQL (conception interface + diagramme de classes)</li>
-          </ul>
-        </li>
-      </ul>
+      <h2><i class="fa fa-graduation-cap"></i> Formation</h2>
+      <div class="card">
+        <h3>Master 1 - Science de données</h3>
+        <p>Université Joseph Ki Zerbo (IFOAD) — 2024 - présent</p>
+      </div>
+      <div class="card">
+        <h3>Licence - Réseau et Système</h3>
+        <p>Université Joseph Ki Zerbo</p>
+      </div>
     </section>
 
-    <!-- ===== COMPETENCES ===== -->
+    <!-- EXPERIENCES -->
     <section>
-      <h2>🛠️ Compétences</h2>
-      <p>
-        <strong>Langages :</strong> Python (Pandas, NumPy, Matplotlib, Scikit-learn, Streamlit)<br>
-        <strong>Base de données :</strong> SQL, PostgreSQL, Normalisation BD<br>
-        <strong>Concepts :</strong> Machine Learning, Analyse de données, Séries temporelles<br>
-        <strong>Outils :</strong> Git, Jupyter, Conda, Docker (basics)
-      </p>
+      <h2><i class="fa fa-briefcase"></i> Expériences & Projets</h2>
+      <div class="card">
+        <h3>Stage - Direction des Services Informatiques</h3>
+        <p>Université Joseph Ki Zerbo — 2025</p>
+      </div>
+      <div class="card">
+        <h3>Projets académiques</h3>
+        <ul>
+          <li>🔍 Détection de fraude numérique (IEEE Fraud Detection)</li>
+          <li>☀️ Analyse de séries temporelles (Sunspot dataset)</li>
+          <li>📚 Logiciel de gestion de notes (PostgreSQL, conception interface & diagramme de classes)</li>
+        </ul>
+      </div>
     </section>
 
-    <!-- ===== REFERENCES ===== -->
+    <!-- COMPETENCES -->
     <section>
-      <h2>📞 Références</h2>
+      <h2><i class="fa fa-cogs"></i> Compétences</h2>
+      <div class="skill">
+        <span>Python</span>
+        <div class="skill-bar"><div class="skill-level python"></div></div>
+      </div>
+      <div class="skill">
+        <span>SQL / PostgreSQL</span>
+        <div class="skill-bar"><div class="skill-level sql"></div></div>
+      </div>
+      <div class="skill">
+        <span>Machine Learning</span>
+        <div class="skill-bar"><div class="skill-level ml"></div></div>
+      </div>
+      <div class="skill">
+        <span>Git / Jupyter / Conda</span>
+        <div class="skill-bar"><div class="skill-level tools"></div></div>
+      </div>
+    </section>
+
+    <!-- REFERENCES -->
+    <section>
+      <h2><i class="fa fa-users"></i> Références</h2>
       <ul>
-        <li><strong>KABRE Abdoul Aziz</strong> — Ingénieur en génie logiciel, Fonction publique — <a href="mailto:kabreaziz60@gmail.com">kabreaziz60@gmail.com</a> — 📞 64119947</li>
+        <li><strong>KABRE Abdoul Aziz</strong> — Ingénieur en génie logiciel — <a href="mailto:kabreaziz60@gmail.com">kabreaziz60@gmail.com</a> — 📞 64119947</li>
         <li><strong>BAZEMO Bali</strong> — Avocat à la cour — <a href="mailto:bazemobali@gmail.com">bazemobali@gmail.com</a> — 📞 66660510</li>
-        <li><strong>KOHOUN Siekuy Herman</strong> — Informaticien, Moov Africa BF — <a href="mailto:siekuy@yahoo.fr">siekuy@yahoo.fr</a> — 📞 00000000</li>
+        <li><strong>KOHOUN Siekuy Herman</strong> — Informaticien, Moov Africa BF — <a href="mailto:siekuy@yahoo.fr">siekuy@yahoo.fr</a></li>
       </ul>
     </section>
 
-    <!-- ===== FOOTER ===== -->
+    <!-- CONTACT -->
     <footer>
       <p>
         📧 <a href="mailto:ton.email@example.com">ton.email@example.com</a> |
-        🔗 <a href="https://github.com/tonpseudo" target="_blank">GitHub</a> |
-        🔗 <a href="https://linkedin.com/in/tonlinkedin" target="_blank">LinkedIn</a>
+        <i class="fab fa-github"></i> <a href="https://github.com/tonpseudo" target="_blank">GitHub</a> |
+        <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/tonlinkedin" target="_blank">LinkedIn</a>
       </p>
     </footer>
   </div>
